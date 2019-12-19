@@ -19,4 +19,7 @@ INSTALLS += target
 RESOURCES += \
     resources.qrc
 
+DISTFILES += \
+    qml/gamegrid.qml
+
 

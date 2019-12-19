@@ -58,7 +58,7 @@ void Widget::initializeHomeView()
 
     QFrame *whiteLine = new QFrame;
     whiteLine->setFrameStyle(QFrame::VLine | QFrame::Plain);
-    whiteLine->setStyleSheet("border: 2px solid white");
+    whiteLine->setStyleSheet("border: 1px solid white");
     whiteLine->setFixedHeight(80);
 
 
@@ -90,7 +90,7 @@ void Widget::initializeHomeView()
     QVBoxLayout *homeLayout = new QVBoxLayout;
     homeLayout->addSpacing(270);
     homeLayout->addWidget(nameLabel);
-    homeLayout->addSpacing(85);
+    homeLayout->addSpacing(15);
     homeLayout->addLayout(iconBox);
     homeLayout->addSpacing(100);
     homeLayout->addLayout(startButtonBox);
@@ -305,7 +305,3 @@ void Widget::toggleState()
         setState(toggleNX(currentState));
     }
 }
-
-
-
-

@@ -52,22 +52,27 @@ private:
     QPixmap *crossImg;
     QWidget *homeView;
     QWidget *gameView;
+
     void initializeGameView();
+
     QStackedLayout *layout;
     scoreLabel *noughtScoreLabel;
     scoreLabel *crossScoreLabel;
     infoLabel *whoseTurn;
+
     void resetGame();
     void initializeWins();
-     void setScoreLabels();
-      bool gameInProgress = false;
-      QString firstPlayer;
-       QString toggleNX(QString item);
-       std::map<QString, int> wins;
-       void incrementWinner(const QString winner);
-        QString currentState;
-        void setGridItem(const QString which);
-        void toggleState();
+    void setScoreLabels();
+
+    bool gameInProgress = false;
+    QString firstPlayer;
+
+    QString toggleNX(QString item);
+    std::map<QString, int> wins;
+    void incrementWinner(const QString winner);
+    QString currentState;
+    void setGridItem(const QString which);
+    void toggleState();
 
 
 };

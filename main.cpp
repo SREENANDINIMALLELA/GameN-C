@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
 
     QFile file("://styles/style.qss");
     file.open(QFile::ReadOnly);
+    
     QString styleSheet = QString::fromLatin1(file.readAll());
     app.setStyleSheet(styleSheet);
 
